@@ -1,0 +1,7 @@
+<%= link_to "Create new information", new_figure_path %> <br/><hr><hr>
+
+<% @figures.each do |figure| %>
+<p>
+	 Letter: <%= figure.letter %> <br/><br/> 
+	<p>
+	<% end %>
