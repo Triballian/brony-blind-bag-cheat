@@ -36,14 +36,20 @@ class Figure < ActiveRecord::Base
 	
 	}
 
-	def initialize(bag_index)
-		@letter = bag_index.to_s
+	def initialize(letter_index, figure_index)
+		@letter = letter_index.to_s
+		@figure = figure_index.to_s
 #		puts "initialize " + @letter
 	end
 
 	def figure
 		figure = FIGURE[@letter.to_sym].to_s
 	end
+
+	def letter
+		letter = LETTER[@figure.to_sym].to_s
+	end
+
 
 
 
