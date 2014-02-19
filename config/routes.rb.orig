@@ -1,0 +1,11 @@
+BronyBlindBagCheat::Application.routes.draw do
+  resources :contacts, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
+<<<<<<< HEAD
+  resources :figures
+  root to: 'figures#new'
+=======
+ 
+  root to: 'visitors#new'
+>>>>>>> 2a1f0eacba78f5ade69ebd0e60afa01e22a338f8
+end

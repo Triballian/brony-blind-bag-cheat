@@ -1,0 +1,35 @@
+<% content_for :title do %>Brony Blind Bag Cheat<% end %>
+<% content_for :description do %>Find out what's in the bag before you buy<% end %>
+
+<section>
+  <div class="column">
+    <h2>Stay in touch.</h2>
+
+  </div>
+  <div class="column">
+    <div class="form-centered">
+      <%= simple_form_for @visitor do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
+      <br/>
+      <%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section>
+<<<<<<< HEAD
+Select the which letter is on the blind bag
+<hr><hr>
+
+<br>
+
+=======
+
+</br>
+  <%= Visitor::FIGURE[:A].to_s %>
+  </br>
+>>>>>>> 2a1f0eacba78f5ade69ebd0e60afa01e22a338f8
+  <%= image_tag "brony-blind-bag-cheat-cover2.0.jpg" %>
+</section>
