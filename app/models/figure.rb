@@ -6,7 +6,7 @@ class Figure < ActiveRecord::Base
 	
 	A: "AppleJack", B: "Big MacIntosh", C: "Fluttershy II", D: "Pinkie Pie",
 	
-	E: "Rainbow Dash", F: "Rarity", G: "Amethyst STar II", H: "ShoeShine II",
+	E: "Rainbow Dash", F: "Rarity", G: "Amethyst Star II", H: "ShoeShine II",
 	
 	I: "Noteworthy", K: "Sea Swirl", L: "Berryshine II", M: "Princess Cadance II",
 	
@@ -18,8 +18,26 @@ class Figure < ActiveRecord::Base
 	
 	}
 
-	def initialize(letter)
-		@letter = letter.to_s
+	LETTER =
+
+	{
+
+	AppleJack: "A", Big_MacIntosh: "B", Fluttershy_II: "C", Pinkie_Pie: "D",
+	
+	Rainbow_Dash: "E", Rarity: "F", Amethyst_Star_II: "G", ShoeShine_II: "H",
+	
+	Noteworthy: "I", Sea_Swirl: "K", Berryshine_II: "L", Princess_Cadance_II: "M",
+	
+	Peachy_Sweet_II: "N", Lily_Valley: "O", Nurse_Snowheart: "P", Sprinkle_Medley: "R",
+	
+	Tropical_Storm: "S", Mr__Carrot_Cake: "T", Green_Jewel: "U", Lavender_Fritter: "V",
+	
+	Apple_Honey: "W", Honey_Rays: "X", Prism_Glider: "Y", Grape_Delight: "Z"
+	
+	}
+
+	def initialize(bag_index)
+		@letter = bag_index.to_s
 #		puts "initialize " + @letter
 	end
 
