@@ -1,11 +1,19 @@
 class FiguresController < ApplicationController
 	
-#	def index
-#		@figures = Figure.all
-#	end
-
 	def new
-		@figure = Figure.new("A")
+		@figure = Figure.new(params[:letter_id])
+		
+	end
+
+	def create
+		@figure = Figure.new(params[:letter_id])
+		if @figure.valid?
+			@figure = Figure.new("A")
+			redirect_to root_path
+		else
+		render :new
+	end
+
 	end
 
 #	def create

@@ -19,7 +19,8 @@ class Figure < ActiveRecord::Base
 	}
 
 	def initialize(letter)
-		@letter = letter
+		@letter = letter.to_s
+#		puts "initialize " + @letter
 	end
 
 	def figure
