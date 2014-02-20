@@ -1,4 +1,8 @@
 class FiguresController < ApplicationController
+
+	def show
+		render 'figures/code_location'
+    end
 	
 	def new
 		@figure = Figure.new(params[:letter_id], params[:figure_id], params[:letter10_id], params[:figure10_id])
