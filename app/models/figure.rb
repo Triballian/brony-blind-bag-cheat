@@ -82,25 +82,40 @@ class Figure < ActiveRecord::Base
 		figure = FIGURE[@letter.to_sym].to_s
 	end
 
+	def letter_selected
+		letter_selected = @letter.to_s
+
+	end
+
 	def letter
 		letter = LETTER[@figure.to_sym].to_s
 	end
 
-	#def figure_selected
-	#	if !LETTER[@figure.to_sym].nill?
-	#	figure_selected = FIGURE[LETTER[@figure.to_sym].to_sym].to_s
-	# end
-	#end
+	def figure_selected
+		if !@figure.empty?
+		figure_selected = FIGURE[LETTER[@figure.to_sym].to_sym].to_s
+	 end
+	end
 
 	def figure10
 		figure10 = FIGURE_WAVE10[@letter10.to_sym].to_s
 	end
 
+	def letter10_selected
+		letter10_selected = @letter10.to_s
+
+	end
+	
+
 	def letter10
 		letter10 = LETTER_WAVE10[@figure10.to_sym].to_s
 	end
 
-
+	def figure10_selected
+		if !@figure10.empty?
+		figure10_selected = FIGURE_WAVE10[LETTER_WAVE10[@figure10.to_sym].to_sym].to_s
+	 end
+	end
 
 
 
