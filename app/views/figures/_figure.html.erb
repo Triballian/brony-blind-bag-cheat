@@ -5,7 +5,6 @@
 </body>
 </html>
 Wave 9
-<br>
 <form name="input" method="get">
 <select name="figure_id" id="figure_id">
 <option value="">Figure</option>
@@ -117,22 +116,17 @@ Wave 10
 <option value="Y">Y</option>
 <option value="Z">Z</option>
 </select>
-
+<input type="submit" value="Submit">
 <br>
-<br>
-<p><input type="submit" value="Submit"><p>
 
 Wave 9
+Look on the bag for the letter <font color="red"><%= @figure.letter %></font>.
+The figure is <font color="red"><%= @figure.figure %></font>.
 <br>
-<p>Look on the bag for the letter <font color="red"><%= @figure.letter %></font> . </p>
-<p>The figure is <font color="red"><%= @figure.figure %></font>. </p>
 
 Wave 10
-<br>
-<br>
-<p>Look on the bag for the letter <font color="red"><%= @figure.letter10 %></font>. </p>
-<p>The figure is <font color="red"><%= @figure.figure10 %></font>. </p>
-<br>
+Look on the bag for the letter <font color="red"><%= @figure.letter10 %></font>.
+The figure is <font color="red"><%= @figure.figure10 %></font>.
 </form>
 <%= image_tag "brony-blind-bag-cheat-cover2.0.jpg" %>
 
