@@ -9,7 +9,7 @@ class FiguresController < ApplicationController
 	def create
 		@figure = Figure.new(params[:letter_id], parmas[:figure_id], params[:letter10_id], params[:figure10_id])
 		if @figure.valid?
-			@figure = Figure.new("A", "AppleJack")
+#			@figure = Figure.new("A", "AppleJack")
 			redirect_to root_path
 		else
 		render :new
