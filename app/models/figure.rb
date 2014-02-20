@@ -70,9 +70,11 @@ class Figure < ActiveRecord::Base
 	Apple_Honey: "W", Honey_Rays: "X", Prism_Glider: "Y", Grape_Delight: "Z"
 	}
 
-	def initialize(letter_index, figure_index)
+	def initialize(letter_index, figure_index, letter10_index, figure10_index)
 		@letter = letter_index.to_s
 		@figure = figure_index.to_s
+		@letter10 = letter10_index.to_s
+		@figure10 = figure10_index.to_s
 #		puts "initialize " + @letter
 	end
 
@@ -82,6 +84,14 @@ class Figure < ActiveRecord::Base
 
 	def letter
 		letter = LETTER[@figure.to_sym].to_s
+	end
+
+	def figure10
+		figure10 = FIGURE_WAVE10[@letter10.to_sym].to_s
+	end
+
+	def letter10
+		letter10 = LETTER_WAVE10[@figure10.to_sym].to_s
 	end
 
 
