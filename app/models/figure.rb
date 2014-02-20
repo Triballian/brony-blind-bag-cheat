@@ -36,6 +36,40 @@ class Figure < ActiveRecord::Base
 	
 	}
 
+	FIGURE_WAVE10 =
+
+	{ 
+	
+	A: "AppleJack", B: "Big MacIntosh", C: "Fluttershy", D: "Pinkie Pie",
+	
+	E: "Rainbow Dash", F: "Rarity", G: "Amethyst Star", H: "ShoeShine",
+	
+	I: "Noteworthy", K: "Sea Swirl", L: "Berryshine", M: "Princess Cadance",
+	
+	N: "Peachy Sweet", O: "Lily Valley", P: "Nurse Snowheart", R: "Sprinkle Medley",
+	
+	S: "Tropical Storm", T: "Mr. Carrot Cake", U: "Green Jewel", V: "Lavender Fritter",
+	
+	W: "Apple Honey", X: "Honey Rays", Y: "Prism Glider", Z: "Grape Delight"
+	
+	}
+
+	LETTER_WAVE10 =
+
+	{
+	AppleJack: "A", Big_MacIntosh: "B", Fluttershy: "C", Pinkie_Pie: "D",
+	
+	Rainbow_Dash: "E", Rarity: "F", Amethyst_Star: "G", ShoeShine: "H",
+	
+	Noteworthy: "I", Sea_Swirl: "K", Berryshine: "L", Princess_Cadance: "M",
+	
+	Peachy_Sweet: "N", Lily_Valley: "O", Nurse_Snowheart: "P", Sprinkle_Medley: "R",
+	
+	Tropical_Storm: "S", Mr__Carrot_Cake: "T", Green_Jewel: "U", Lavender_Fritter: "V",
+	
+	Apple_Honey: "W", Honey_Rays: "X", Prism_Glider: "Y", Grape_Delight: "Z"
+	}
+
 	def initialize(letter_index, figure_index)
 		@letter = letter_index.to_s
 		@figure = figure_index.to_s
