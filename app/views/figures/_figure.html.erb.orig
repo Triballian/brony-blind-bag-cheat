@@ -1,7 +1,23 @@
+<<<<<<< HEAD
+
+<html> <head>
+<link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" />
+</head>
+<body>
+</body>
+</html>
+
+<section>
+
+<div class="column">
+
+=======
+>>>>>>> parent of bb9c94f... Added instruction on how to use the app
 Wave 9
 <br>
 <form name="input" method="get">
 <select name="figure_id" id="figure_id">
+<option value="">Figure</option>
 <option value="AppleJack">AppleJack</option>
 <option value="Big_MacIntosh">Big MacIntosh</option>
 <option value="Fluttershy_II">Fluttershy II</option>
@@ -28,6 +44,7 @@ Wave 9
 <option value="Grape_Delight">Grape Delight</option>
 </select>
 <select name="letter_id" id="letter_id">
+<option value="">Letter</option>
 <option value="A">A</option>
 <option value="B">B</option>
 <option value="C">C</option>
@@ -55,6 +72,7 @@ Wave 9
 </select>
 Wave 10
 <select name="figure10_id" id="figure10_id">
+<option value="">Figure</option>
 <option value="AppleJack">AppleJack</option>
 <option value="Big_MacIntosh">Big MacIntosh</option>
 <option value="Fluttershy">Fluttershy</option>
@@ -82,6 +100,7 @@ Wave 10
 </select>
 </select>
 <select name="letter10_id" id="letter10_id">
+<option value="">Letter</option>
 <option value="A">A</option>
 <option value="B">B</option>
 <option value="C">C</option>
@@ -114,7 +133,7 @@ Wave 10
 
 Wave 9
 <br>
-<p>Look on the bag for the letter <%= @figure.letter %> . </p>
+<p>the code letter is <%= @figure.letter %> . </p>
 <p>The figure is <%= @figure.figure %>. </p>
 
 Wave 10
@@ -122,7 +141,6 @@ Wave 10
 <br>
 <p>Look on the bag for the letter <%= @figure.letter10 %> . </p>
 <p>The figure is <%= @figure.figure10 %>. </p>
-<br>
 </form>
 <%= image_tag "brony-blind-bag-cheat-cover2.0.jpg" %>
 
