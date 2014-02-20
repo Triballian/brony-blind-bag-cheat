@@ -39,6 +39,8 @@
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
+background: url(brony-blind-bag-cheat-cover2.0.jpg) no-repeat;
+// background-position: center;
   @include twelve-columns;
   background-color: #eee;
   }
