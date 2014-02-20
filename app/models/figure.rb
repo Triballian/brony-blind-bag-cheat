@@ -89,8 +89,8 @@ class Figure < ActiveRecord::Base
 	#def figure_selected
 	#	if !LETTER[@figure.to_sym].nill?
 	#	figure_selected = FIGURE[LETTER[@figure.to_sym].to_sym].to_s
+	# end
 	#end
-	end
 
 	def figure10
 		figure10 = FIGURE_WAVE10[@letter10.to_sym].to_s
