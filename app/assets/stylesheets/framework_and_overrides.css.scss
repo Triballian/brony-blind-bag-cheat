@@ -8,7 +8,8 @@
 .top-bar .name a {
   font-weight: normal;
   color: white;
-  padding: 0 15px; }
+ padding: 0 15px; }
+
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
@@ -36,6 +37,14 @@
   @extend .button;
   @extend .radius;
   }
+// classes added by noe
+.wave {
+  color: white;
+  background-color: #333;
+  front-size: 1.5em;
+  width: 63px;
+}
+// end of classes add by noe
 // apply styles to HTML elements
 // to make views framework-neutral
 main {
@@ -46,17 +55,12 @@ background: url(brony-blind-bag-cheat-cover2.0.jpg) no-repeat;
   background-color: #eee;
   }
 //stuff i put in
-#wave {
-  color: white;
-  background-color: #333;
-  front-size: 1.5em;
-  width: 63px;
-}
+
 #pony_output {
   color: white;
   background-color: #333;
   front-size: 1.5em;
-  width: 295px;
+  width: 293px;
 }   
 select {
   color: white;
