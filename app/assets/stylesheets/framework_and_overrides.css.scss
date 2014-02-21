@@ -45,6 +45,35 @@ background: url(brony-blind-bag-cheat-cover2.0.jpg) no-repeat;
   @include twelve-columns;
   background-color: #eee;
   }
+//stuff i put in
+#wave {
+  color: white;
+  background-color: #333;
+  front-size: 1.5em;
+  width: 63px;
+}
+#pony_output {
+  color: white;
+  background-color: #333;
+  front-size: 1.5em;
+  width: 465px;
+}   
+select {
+  color: white;
+  background-color: #333;
+  front-size: 1.5em;
+}
+input {
+  color: white;
+  background-color: #333;
+  front-size: 1.5em;
+}  
+style {
+  color: white;
+  background-color: #333;
+  front-size: 1.5em;
+}
+// end of stuff i put in 
 section {
   @extend .row;
   margin-top: 20px;
